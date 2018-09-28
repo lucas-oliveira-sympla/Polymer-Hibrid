@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="luna-input">
+  <template>
+    <style>
+        
+    </style>
+    <div>[[_label]]</div>
+    <input type="text">
+  </template>
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'luna-input',
+
+        properties: {
+          _label: {
+            type: String,
+            value: 'Nome'
+          }
+        }
+
+      })
+    }());
+  </script>
+</dom-module>

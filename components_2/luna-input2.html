@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="luna-input2">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <p>label</p>
+    <p>[[prop1]]</p>
+    <input type="text">
+  </template>
+  <script>
+    class LunaInput2 extends Polymer.Element {
+      static get is() {
+        return 'luna-input2';
+      }
+
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: "eu que escrevi"
+          }
+        };
+      }
+
+
+
+    }
+    customElements.define(LunaInput2.is, LunaInput2);
+  </script>
+</dom-module>
